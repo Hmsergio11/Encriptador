@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-1:#EEEEEE;
+    --color-2:#201E43;
+    --color-3:#508C9B;
+    --color-4:#FFFFFF;
+    --color-5:#495057;
+    --color-6:#343A40;
+    --fuente-inter:'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-4);
+}
+.header{
+    padding: 1% 0% 1% 0%;
+    background-color: var(--color-4);
+    
+}
+
+.logo{
+    display: flex;
+}
+
+.entrada_y_salida_de_texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 4rem;
+    padding-bottom: 6.25rem;
+    
+    
+}
+
+.texto_entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    gap: 11px;
+    
+}
+
+.inTxt{
+    font-family:var(--fuente-inter);
+    font-weight: 400;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    height: calc(80vh - 200px);
+    resize: none;
+    
+    
+}
+
+p{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-2);
+}
+
+button{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 328px;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family:var(--fuente-inter);
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-2);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.botones_encriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.outTxt{
+    font-family:var(--fuente-inter);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 3px solid var(--color-3);
+    border-radius: 1.5rem;
+    color: var(--color-6);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    height: calc(80vh - 200px);
+    resize: none;
+    
+    
+}
+
+.texto_salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4375rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    
+
+}
+
+.boton_copiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.encriptar{
+    background-color: var(--color-2);
+    color: var(--color-4);
+    
+}
+
+.desencriptar{
+    background-color:var(--color-3);
+    color: var(--color-2);
+    
+}
+
+.copiar{
+    background-color:var(--color-4);
+    color: var(--color-2);
+    
+    
+}
+
+.footer{
+    width: 100%;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    padding: 1rem 0 2.5rem 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer h1 {
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 0.8rem;
+
+}
+
+@media (max-width: 1024px) {
+    .entrada_y_salida_de_texto{
+        flex-direction: column;
+
+    
+    }
+
+    .header{
+        padding: 1%;
+        
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: center
+    }
+
+    .outTxt{
+        max-width: none;
+        
+    }
+
+    .texto_salida{
+        margin-top: 16px;
+        max-width: none;
+    }
+
+    .no_texto{
+        display: none;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .entrada_y_salida_de_texto{
+        flex-direction: column;
+        
+    
+    }
+
+    .header{
+        padding: 1%;
+        
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: center
+    }
+
+
+    .texto_salida{
+        margin-top: 16px;
+    }
+
+    .botones_encriptar{
+        flex-direction: column;
+    }
+
+    .outTxt{
+        max-width: none;
+        
+    }
+
+    .texto_salida{
+        margin-top: 16px;
+        max-width: none;
+    }
+
+    .no_texto{
+        display: none;
+    }
+
+    button{
+        width: 100%;
+    }
+    
+}
